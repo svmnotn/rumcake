@@ -5,6 +5,9 @@ use embedded_io_async::{Read, Write};
 #[cfg(feature = "is31fl3731")]
 pub mod is31fl3731;
 
+#[cfg(feature = "ls011b7dh03")]
+pub mod ls011b7dh03;
+
 #[cfg(feature = "nrf-ble")]
 pub mod nrf_ble;
 

@@ -20,7 +20,8 @@ features = [
   "media-keycodes",
   "ws2812-bitbang",
   "is31fl3731",
-  "ssd1306"
+  "ssd1306",
+  "ls011b7dh03"
 ]
 
 flavours = [
@@ -65,6 +66,7 @@ num = { version = "0.4.1", default-features = false }
 num-traits = { version = "0.2", default-features = false } 
 num-derive = "0.3"
 libm = "0.2.7"
+sharp-memory-display = { version = "0.3", default-features = false, features = ["ls011b7dh03"], optional = true }
 
 # serialization for split keyboard setups
 serde = { version = "1.0.188", default-features = false, features = ["derive"] }
@@ -135,4 +137,4 @@ split-central = ["nrf-softdevice?/ble-central", "nrf-softdevice?/ble-gatt-client
 ws2812-bitbang = []
 is31fl3731 = ["dep:is31fl3731"]
 ssd1306 = ["dep:ssd1306"]
-
+ls011b7dh03 = ["dep:sharp-memory-display"]
